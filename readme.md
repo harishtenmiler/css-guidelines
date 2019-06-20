@@ -48,7 +48,6 @@ Here's an example:
  </button>
 </div>
 ````
-
 ### Rule ordering
 Properties and nested declarations should appear in the following order
 1. Layout and box-model properties
