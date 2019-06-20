@@ -34,21 +34,23 @@ The naming convention follows the following pattern along with lowercase
 Here's an example:
 ```html
 <div class="contact-card">
-    <h2 class="contact-card__name">Person</h2>
-    <div class="contact-card__content">
-        <p class="contact-card__content__details">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-        </p>
-    </div>
-    <button class="contact-card__btn contact-card__btn--primay">
-        Accept
-    </button>
-    <button class="contact-card__btn contact-card__btn--secondary">
-        Reject
-    </button>
+ <h2 class="contact-card__name">Person</h2>
+ <div class="contact-card__content">
+   <p class="contact-card__content__details">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+   </p>
+ </div>
+ <button class="contact-card__btn contact-card__btn--primay">
+   Accept
+ </button>
+  <button class="contact-card__btn contact-card__btn--secondary">
+   Reject
+ </button>
 </div>
 ````
-### Rule ordering
+
+
+#### Rule ordering
 Properties and nested declarations should appear in the following order
 1. Layout and box-model properties
    - margin, padding, box-sizing, overflow, position, display, width/height, etc.
@@ -76,20 +78,45 @@ Here’s a comprehensive example:
   border-radius: 3px;
   color: white;
 }
-
 .hf-btn::before {
   content: '';
 }
-
 .hf-btn:focus, .hf-btn:hover {
   box-shadow: 0 0 0 1px color(blue, 0.3);
 }
-
 .hf-btn--big {
   padding: 12px 24px;
 }
-
 .hf-btn > .hf-icon {
   margin-right: 6px;
 }
 ```
+#### Media Queries
+Start the development with generic rules with and add media queries with mobile first.
+
+```css
+/* Good */
+.navbar {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+}
+
+/* Bad */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    position: static;
+    padding: 10px;
+  }
+}
+````
