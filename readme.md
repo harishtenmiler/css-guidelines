@@ -34,18 +34,18 @@ The naming convention follows the following pattern along with lowercase
 Here's an example:
 ```html
 <div class="contact-card">
- <h2 class="contact-card__name">Person</h2>
- <div class="contact-card__content">
-   <p class="contact-card__content__details">
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
-   </p>
- </div>
- <button class="contact-card__btn contact-card__btn--primay">
-   Accept
- </button>
-  <button class="contact-card__btn contact-card__btn--secondary">
-   Reject
- </button>
+    <h2 class="contact-card__name">Person</h2>
+    <div class="contact-card__content">
+        <p class="contact-card__content__details">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+        </p>
+    </div>
+    <button class="contact-card__btn contact-card__btn--primay">
+        Accept
+    </button>
+    <button class="contact-card__btn contact-card__btn--secondary">
+        Reject
+    </button>
 </div>
 ````
 ### Rule ordering
