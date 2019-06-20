@@ -49,8 +49,7 @@ Here's an example:
 </div>
 ````
 
-
-#### Rule ordering
+### Rule ordering
 Properties and nested declarations should appear in the following order
 1. Layout and box-model properties
    - margin, padding, box-sizing, overflow, position, display, width/height, etc.
