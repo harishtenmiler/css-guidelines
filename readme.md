@@ -1,5 +1,5 @@
 # CSS Guidelines 
-### General
+#### General
 - Avoid using HTML tags in CSS selectors
 - Don't use ids in selectors
 - Don’t nest more than 3 levels deep
@@ -20,7 +20,37 @@
 - Add a new line at the end of .scss files
 - Trim excess whitespace
 
-### Rule ordering
+### Naming Convention - BEM
+The naming convention follows the following pattern along with lowercase
+```css
+.block {}
+.block__element {}
+.block--modifier {}
+````
+a) .block represents the higher level of an abstraction or component.
+b) .block__element represents a descendent of .block that helps form .block as a whole.
+c) .block--modifier represents a different state or version of .block.
+
+Here's an example:
+```html
+<div class="contact-card">
+ <h2 class="contact-card__name">Person</h2>
+ <div class="contact-card__content">
+   <p class="contact-card__content__details">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+   </p>
+ </div>
+ <button class="contact-card__btn contact-card__btn--primay">
+   Accept
+ </button>
+  <button class="contact-card__btn contact-card__btn--secondary">
+   Reject
+ </button>
+</div>
+````
+
+
+#### Rule ordering
 Properties and nested declarations should appear in the following order
 1. Layout and box-model properties
    - margin, padding, box-sizing, overflow, position, display, width/height, etc.
