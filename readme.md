@@ -69,7 +69,7 @@ Properties and nested declarations should appear in the following order
 
 Here’s a comprehensive example:
 ```css
-.c-btn {
+.hf-btn {
   display: inline-block;
   padding: 6px 12px;
   text-align: center;
@@ -78,16 +78,16 @@ Here’s a comprehensive example:
   border-radius: 3px;
   color: white;
 }
-.c-btn::before {
+.hf-btn::before {
   content: '';
 }
-.c-btn:focus, .c-btn:hover {
+.hf-btn:focus, .hf-btn:hover {
   box-shadow: 0 0 0 1px color(blue, 0.3);
 }
-.c-btn--big {
+.hf-btn--big {
   padding: 12px 24px;
 }
-.c-btn > .c-icon {
+.hf-btn > .hf-icon {
   margin-right: 6px;
 }
 ```
