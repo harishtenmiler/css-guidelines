@@ -50,7 +50,7 @@ Here's an example:
 ````
 
 
-#### Rule ordering
+### Rule ordering
 Properties and nested declarations should appear in the following order
 1. Layout and box-model properties
    - margin, padding, box-sizing, overflow, position, display, width/height, etc.
@@ -91,7 +91,7 @@ Here’s a comprehensive example:
   margin-right: 6px;
 }
 ```
-#### Media Queries
+### Media Queries
 Start the development with generic rules with and add media queries with mobile first.
 
 ```css
