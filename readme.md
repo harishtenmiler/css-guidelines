@@ -76,15 +76,19 @@ Here’s a comprehensive example:
   border-radius: 3px;
   color: white;
 }
+
 .hf-btn::before {
   content: '';
 }
+
 .hf-btn:focus, .hf-btn:hover {
   box-shadow: 0 0 0 1px color(blue, 0.3);
 }
+
 .hf-btn--big {
   padding: 12px 24px;
 }
+
 .hf-btn > .hf-icon {
   margin-right: 6px;
 }
